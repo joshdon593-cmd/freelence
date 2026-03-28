@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Don - DevOps Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-mono text-xl font-bold text-brand-400 logo-wrapper">
+                        <img src="./favicon/SDL1.png" alt="Joshua Don Logo" class="w-32 h-20 inline-block mr-2">
+                    </span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-brand-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#skills" class="hover:text-brand-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Tech Stack</a>
+                        <a href="#services" class="hover:text-brand-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="#projects" class="hover:text-brand-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
+                        <a href="#contact" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-lg shadow-brand-500/20">Hire Me</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="toggleMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-dark-800 border-b border-gray-700" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#skills" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tech Stack</a>
+                <a href="#services" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#projects" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#contact" class="text-brand-400 font-bold block px-3 py-2 rounded-md text-base">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://image.qwenlm.ai/public_source/a40566c6-6316-477b-bf16-f9b90386bb2a/17d4c06b6-da01-4608-9af6-e96a50182e1b.png" alt="Cloud Background" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-900/80 to-dark-900"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 text-center lg:text-left animate-fade-in-up">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-400 text-xs font-mono mb-6 animate-pulse-slow">
+                        <span class="w-2 h-2 rounded-full bg-brand-400 mr-2"></span> Available for Freelance Projects
+                    </div>
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
+                        Architecting the <br>
+                        <span class="gradient-text">Cloud Infrastructure</span>
+                    </h1>
+                    <p class="mt-4 max-w-2xl mx-auto lg:mx-0 text-xl text-gray-400 mb-10">
+                        Specializing in scalable AWS architectures, automated CI/CD pipelines, and robust Kubernetes orchestration. I turn complex infrastructure into streamlined, self-healing systems.
+                    </p>
+                    <div class="flex justify-center lg:justify-start gap-4">
+                        <a href="#projects" class="px-8 py-3 rounded-lg bg-brand-600 hover:bg-brand-500 text-white font-bold transition-all shadow-lg shadow-brand-500/30 hover:shadow-brand-500/50">
+                            View Work
+                        </a>
+                        <a href="#contact" class="px-8 py-3 rounded-lg glass-card hover:bg-white/10 text-white font-bold transition-all border border-gray-600">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-10 lg:mt-0 flex justify-center animate-slide-in-right">
+                    <div class="relative text-center">
+                        <div class="hero-image-wrapper inline-block rounded-full">
+                            <img src="./assets/Josh2.png" alt="Joshua Don - DevOps Engineer" class="w-80 h-80 rounded-full object-cover border-4 border-brand-500/30 shadow-2xl animate-float">
+                        </div>
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-t from-dark-900/50 to-transparent"></div>
+                        <p class="mt-4 text-xl font-bold text-white">Joshua Don</p>
+                        <p class="text-gray-400">DevOps Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute top-1/4 left-10 w-24 h-24 bg-brand-500/20 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute bottom-1/4 right-10 w-32 h-32 bg-purple-500/20 rounded-full blur-3xl animate-float" style="animation-delay: 1s;"></div>
+    </section>
+
+    <!-- Image Carousel Section -->
+    <section class="py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-4">
+                <h2 class="text-2xl font-bold text-white mb-2">DevOps in Action</h2>
+                <p class="text-gray-400 text-sm">Visualizing the world of cloud infrastructure and automation</p>
+            </div>
+            
+            <div class="relative overflow-hidden">
+                <div class="carousel-container flex animate-slide">
+                    <div class="carousel-slide flex-shrink-0 w-full md:w-1/3 lg:w-1/4 px-1">
+                        <div class="glass-card p-1 rounded text-center">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Cloud Infrastructure" class="w-full h-16 object-cover rounded mb-1">
+                            <h3 class="text-xs font-bold text-white">Cloud Infrastructure</h3>
+                            <p class="text-gray-400 text-xs">Scalable AWS architectures</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide flex-shrink-0 w-full md:w-1/3 lg:w-1/4 px-1">
+                        <div class="glass-card p-1 rounded text-center">
+                            <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="CI/CD Pipelines" class="w-full h-16 object-cover rounded mb-1">
+                            <h3 class="text-xs font-bold text-white">CI/CD Pipelines</h3>
+                            <p class="text-gray-400 text-xs">Automated deployment workflows</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide flex-shrink-0 w-full md:w-1/3 lg:w-1/4 px-1">
+                        <div class="glass-card p-1 rounded text-center">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Kubernetes Orchestration" class="w-full h-16 object-cover rounded mb-1">
+                            <h3 class="text-xs font-bold text-white">Kubernetes Orchestration</h3>
+                            <p class="text-gray-400 text-xs">Container orchestration</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide flex-shrink-0 w-full md:w-1/3 lg:w-1/4 px-1">
+                        <div class="glass-card p-1 rounded text-center">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Monitoring & Alerting" class="w-full h-16 object-cover rounded mb-1">
+                            <h3 class="text-xs font-bold text-white">Monitoring & Alerting</h3>
+                            <p class="text-gray-400 text-xs">Real-time insights</p>
+                        </div>
+                    </div>
+                    <!-- Duplicate slides for infinite effect -->
+                    <div class="carousel-slide flex-shrink-0 w-full md:w-1/3 lg:w-1/4 px-1">
+                        <div class="glass-card p-1 rounded text-center">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Cloud Infrastructure" class="w-full h-16 object-cover rounded mb-1">
+                            <h3 class="text-xs font-bold text-white">Cloud Infrastructure</h3>
+                            <p class="text-gray-400 text-xs">Scalable AWS architectures</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide flex-shrink-0 w-full md:w-1/3 lg:w-1/4 px-1">
+                        <div class="glass-card p-1 rounded text-center">
+                            <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="CI/CD Pipelines" class="w-full h-16 object-cover rounded mb-1">
+                            <h3 class="text-xs font-bold text-white">CI/CD Pipelines</h3>
+                            <p class="text-gray-400 text-xs">Automated deployment workflows</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide flex-shrink-0 w-full md:w-1/3 lg:w-1/4 px-1">
+                        <div class="glass-card p-1 rounded text-center">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Kubernetes Orchestration" class="w-full h-16 object-cover rounded mb-1">
+                            <h3 class="text-xs font-bold text-white">Kubernetes Orchestration</h3>
+                            <p class="text-gray-400 text-xs">Container orchestration</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide flex-shrink-0 w-full md:w-1/3 lg:w-1/4 px-1">
+                        <div class="glass-card p-1 rounded text-center">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Monitoring & Alerting" class="w-full h-16 object-cover rounded mb-1">
+                            <h3 class="text-xs font-bold text-white">Monitoring & Alerting</h3>
+                            <p class="text-gray-400 text-xs">Real-time insights</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-dark-900 scroll-fade-in-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-fade-in-up scroll-delay-100">
+                <h2 class="text-3xl font-bold text-white mb-4">Technical Arsenal</h2>
+                <div class="h-1 w-20 bg-brand-500 mx-auto rounded"></div>
+                <p class="mt-4 text-gray-400">Tools and technologies I use to build resilient systems.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Cloud Providers -->
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in border-glow-hover">
+                    <i class="fab fa-aws text-5xl text-orange-500 mb-4 group-hover:scale-110 transition-transform skill-icon animate-bounce-in"></i>
+                    <h3 class="text-lg font-bold text-white">AWS</h3>
+                    <p class="text-sm text-gray-400 mt-2">EC2, S3, Lambda, RDS, VPC</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-100 border-animate-pulse border-glow-hover">
+                    <i class="fab fa-google text-5xl text-red-500 mb-4 group-hover:scale-110 transition-transform animate-rotate-in animate-delay-100"></i>
+                    <h3 class="text-lg font-bold text-white">GCP</h3>
+                    <p class="text-sm text-gray-400 mt-2">Compute Engine, GKE, BigQuery</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-200 border-animate-rainbow border-glow-hover">
+                    <i class="fab fa-microsoft text-5xl text-blue-400 mb-4 group-hover:scale-110 transition-transform animate-bounce-in animate-delay-200"></i>
+                    <h3 class="text-lg font-bold text-white">Azure</h3>
+                    <p class="text-sm text-gray-400 mt-2">AKS, Functions, DevOps</p>
+                </div>
+
+                <!-- Containerization -->
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-300 border-animate-flow border-glow-hover">
+                    <i class="fab fa-docker text-5xl text-blue-500 mb-4 group-hover:scale-110 transition-transform animate-rotate-in animate-delay-300"></i>
+                    <h3 class="text-lg font-bold text-white">Docker</h3>
+                    <p class="text-sm text-gray-400 mt-2">Containerization, Compose</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-400 border-glow-hover">
+                    <i class="fas fa-dharmachakra text-5xl text-blue-600 mb-4 group-hover:scale-110 transition-transform animate-bounce-in animate-delay-400"></i>
+                    <h3 class="text-lg font-bold text-white">Kubernetes</h3>
+                    <p class="text-sm text-gray-400 mt-2">EKS, Helm, Kustomize</p>
+                </div>
+
+                <!-- IaC & Config -->
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-500 border-animate-pulse border-glow-hover">
+                    <i class="fas fa-cubes text-5xl text-purple-500 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-lg font-bold text-white">Terraform</h3>
+                    <p class="text-sm text-gray-400 mt-2">Infrastructure as Code</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-600 border-animate-rainbow border-glow-hover">
+                    <i class="fas fa-server text-5xl text-red-600 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-lg font-bold text-white">Ansible</h3>
+                    <p class="text-sm text-gray-400 mt-2">Configuration Management</p>
+                </div>
+
+                <!-- CI/CD -->
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-700 border-animate-flow border-glow-hover">
+                    <i class="fab fa-gitlab text-5xl text-orange-600 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-lg font-bold text-white">GitLab CI</h3>
+                    <p class="text-sm text-gray-400 mt-2">Pipelines, Runners</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-800 border-glow-hover">
+                    <i class="fab fa-jenkins text-5xl text-red-700 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-lg font-bold text-white">Jenkins</h3>
+                    <p class="text-sm text-gray-400 mt-2">Groovy, Pipelines</p>
+                </div>
+                 <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-900 border-animate-pulse border-glow-hover">
+                    <i class="fas fa-infinity text-5xl text-blue-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-lg font-bold text-white">GitHub Actions</h3>
+                    <p class="text-sm text-gray-400 mt-2">Workflows, Automation</p>
+                </div>
+
+                <!-- Monitoring -->
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-1000 border-animate-rainbow border-glow-hover">
+                    <i class="fas fa-chart-line text-5xl text-orange-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-lg font-bold text-white">Prometheus</h3>
+                    <p class="text-sm text-gray-400 mt-2">Metrics & Alerting</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-1100 border-animate-flow">
+                    <i class="fas fa-chart-area text-5xl text-green-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-lg font-bold text-white">Grafana</h3>
+                    <p class="text-sm text-gray-400 mt-2">Visualization & Dashboards</p>
+                </div>
+                 <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-1200">
+                    <i class="fab fa-python text-5xl text-yellow-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-lg font-bold text-white">Python/Bash</h3>
+                    <p class="text-sm text-gray-400 mt-2">Scripting & Automation</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-1300 border-glow-hover">
+                    <i class="fas fa-code text-5xl text-indigo-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-lg font-bold text-white">Web Development</h3>
+                    <p class="text-sm text-gray-400 mt-2">HTML, CSS, JavaScript</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-1400 border-glow-hover">
+                    <i class="fas fa-layer-group text-5xl text-teal-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-lg font-bold text-white">Full-stack</h3>
+                    <p class="text-sm text-gray-400 mt-2">Node.js, React, APIs</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center group hover:border-brand-500/50 transition-all animate-scale-in animate-delay-1500 border-glow-hover">
+                    <i class="fas fa-database text-5xl text-green-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-lg font-bold text-white">MongoDB</h3>
+                    <p class="text-sm text-gray-400 mt-2">NoSQL, Atlas, Aggregations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-dark-800 relative scroll-fade-in-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in-up scroll-fade-in-up scroll-delay-100">
+                <h2 class="text-3xl font-bold text-white mb-4">Core Services</h2>
+                <div class="h-1 w-20 bg-brand-500 mx-auto rounded"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-dark-900 p-8 rounded-2xl border border-gray-700 hover:border-brand-500 transition-all duration-300 group animate-scale-in border-glow-hover">
+                    <div class="w-14 h-14 bg-brand-900/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-600 transition-colors">
+                        <i class="fas fa-cloud-upload-alt text-2xl text-brand-400 group-hover:text-white icon-hover-bounce transition-all duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cloud Migration</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Seamless migration of on-premise applications to AWS/Azure. Strategies include Rehost, Replatform, and Refactor to optimize costs and performance.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-dark-900 p-8 rounded-2xl border border-gray-700 hover:border-brand-500 transition-all duration-300 group animate-scale-in animate-delay-200 border-glow-hover">
+                    <div class="w-14 h-14 bg-brand-900/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-600 transition-colors">
+                        <i class="fas fa-sync-alt text-2xl text-brand-400 group-hover:text-white icon-hover-rotate transition-all duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">CI/CD Pipelines</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Designing robust Continuous Integration and Deployment pipelines using Jenkins, GitLab CI, or GitHub Actions to accelerate release cycles.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-dark-900 p-8 rounded-2xl border border-gray-700 hover:border-brand-500 transition-all duration-300 group animate-scale-in animate-delay-400 border-glow-hover">
+                    <div class="w-14 h-14 bg-brand-900/50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-600 transition-colors">
+                        <i class="fas fa-shield-alt text-2xl text-brand-400 group-hover:text-white icon-hover-pulse transition-all duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">DevSecOps</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Integrating security practices within the DevOps process. Automated vulnerability scanning, secret management, and compliance as code.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-dark-900 scroll-slide-in-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in-up scroll-fade-in-up scroll-delay-100">
+                <h2 class="text-3xl font-bold text-white mb-4">Featured Projects</h2>
+                <div class="h-1 w-20 bg-brand-500 mx-auto rounded"></div>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Project 1 -->
+                <div class="flex flex-col md:flex-row gap-8 items-center bg-dark-800 rounded-2xl overflow-hidden border border-gray-700 animate-scale-in border-glow-hover">
+                    <div class="w-full md:w-1/2 h-64 bg-gray-800 relative overflow-hidden group">
+                        <!-- Placeholder for project image using CSS pattern -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                            <i class="fab fa-aws text-6xl text-gray-700 group-hover:text-brand-500 transition-all duration-500 icon-hover-bounce"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Serverless E-Commerce Backend</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-brand-900/50 text-brand-400 text-xs rounded font-mono">AWS Lambda</span>
+                            <span class="px-2 py-1 bg-brand-900/50 text-brand-400 text-xs rounded font-mono">DynamoDB</span>
+                            <span class="px-2 py-1 bg-brand-900/50 text-brand-400 text-xs rounded font-mono">API Gateway</span>
+                            <span class="px-2 py-1 bg-brand-900/50 text-brand-400 text-xs rounded font-mono">Terraform</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">
+                            Architected a fully serverless backend for a high-traffic e-commerce platform. Reduced infrastructure costs by 40% compared to EC2-based architecture. Implemented Infrastructure as Code using Terraform for reproducible environments.
+                        </p>
+                        <a href="#" class="text-brand-400 hover:text-brand-300 font-medium flex items-center gap-2 group">
+                            View Case Study <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="flex flex-col md:flex-row-reverse gap-8 items-center bg-dark-800 rounded-2xl overflow-hidden border border-gray-700 animate-scale-in animate-delay-300 border-glow-hover">
+                    <div class="w-full md:w-1/2 h-64 bg-gray-800 relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                            <i class="fab fa-docker text-6xl text-gray-700 group-hover:text-brand-500 transition-all duration-500 icon-hover-rotate"></i>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Kubernetes Cluster Migration</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-brand-900/50 text-brand-400 text-xs rounded font-mono">EKS</span>
+                            <span class="px-2 py-1 bg-brand-900/50 text-brand-400 text-xs rounded font-mono">Helm</span>
+                            <span class="px-2 py-1 bg-brand-900/50 text-brand-400 text-xs rounded font-mono">ArgoCD</span>
+                            <span class="px-2 py-1 bg-brand-900/50 text-brand-400 text-xs rounded font-mono">Prometheus</span>
+                        </div>
+                        <p class="text-gray-400 mb-6">
+                            Led the migration of a monolithic application to a microservices architecture on Amazon EKS. Implemented GitOps workflows using ArgoCD for automated deployments and set up comprehensive monitoring with Prometheus and Grafana.
+                        </p>
+                        <a href="#" class="text-brand-400 hover:text-brand-300 font-medium flex items-center gap-2 group">
+                            View Case Study <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-dark-800 relative overflow-hidden scroll-scale-in">
+        <!-- Background decoration -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-brand-600/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-purple-600/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-card rounded-2xl p-8 md:p-12 border border-gray-700 scroll-fade-in-up scroll-delay-100">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-white mb-4">Let's Build Something Scalable</h2>
+                    <p class="text-gray-400">Have a project in mind? Looking to optimize your cloud infrastructure? Drop me a message.</p>
+                </div>
+
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full bg-dark-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors" placeholder="Joshua Don">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full bg-dark-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors" placeholder="joshua@example.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full bg-dark-900 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors" placeholder="Tell me about your project requirements..."></textarea>
+                    </div>
+                    <button type="button" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-bold py-4 rounded-lg transition-all shadow-lg shadow-brand-500/20 hover:shadow-brand-500/40 transform hover:-translate-y-1">
+                        Send Message
+                    </button>
+                </form>
+
+                <div class="mt-10 flex justify-center space-x-8">
+                    <a href="#" class="text-gray-400 hover:text-white transition-all duration-300 text-2xl icon-hover-bounce">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-all duration-300 text-2xl icon-hover-rotate">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-sky-400 transition-all duration-300 text-2xl icon-hover-pulse">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-green-400 transition-all duration-300 text-2xl icon-hover-bounce">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 border-t border-gray-800 py-12 scroll-fade-in-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-brand-400 transition-colors">Home</a></li>
+                        <li><a href="#skills" class="text-gray-400 hover:text-brand-400 transition-colors">Tech Stack</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-brand-400 transition-colors">Services</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-brand-400 transition-colors">Projects</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-brand-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-brand-400 transition-colors">Cloud Migration</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-brand-400 transition-colors">CI/CD Pipelines</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-brand-400 transition-colors">DevSecOps</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-brand-400 transition-colors">Infrastructure as Code</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-brand-400 transition-colors">Monitoring & Alerting</a></li>
+                    </ul>
+                </div>
+                
+                <!-- About -->
+                <div class="col-span-1 md:col-span-2">
+                    <span class="font-mono text-xl font-bold text-gray-300">Joshua Don</span>
+                    <p class="text-gray-400 mt-4 leading-relaxed">
+                        DevOps Engineer specializing in cloud infrastructure, automation, and scalable solutions. 
+                        Transforming complex systems into reliable, efficient architectures.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-all duration-300 text-xl icon-hover-bounce">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition-all duration-300 text-xl icon-hover-rotate">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-sky-400 transition-all duration-300 text-xl icon-hover-pulse">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:joshuadon@example.com" class="text-gray-400 hover:text-green-400 transition-all duration-300 text-xl icon-hover-bounce">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-500">© 2026 Joshua Don. All rights reserved.</p>
+                <div class="flex space-x-6 text-sm text-gray-500 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-brand-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-400 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-brand-400 transition-colors">Cookie Policy</a>
+                </div>
+                <button onclick="scrollToTop()" class="mt-4 md:mt-0 bg-brand-600 hover:bg-brand-500 text-white p-3 rounded-full transition-colors shadow-lg shadow-brand-500/20 hover:shadow-brand-500/40">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+   
+</body>
+</html>
+
